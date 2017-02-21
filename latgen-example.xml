@@ -1,0 +1,12 @@
+<xml>
+  <latency usec="2500" />
+  <qlen method="maxbw" value="850M"/>
+  <!-- method can be "direct" or "maxbw" -->
+  <coremode value="1"/>
+  <ignoremacs />
+  <interface address="24:6e:96:02:96:d0"/>
+  <interface address="52:54:00:aa:00:03"/>
+  <interface address="24:6e:96:02:96:d2"/>
+  <interface address="52:54:00:aa:00:05"/>
+</xml>
+
