@@ -8,12 +8,12 @@ to the packets.
 ### Installation:
 
 Extract DPDK (http://dpdk.org) in any directory, configure it to your NIC needs (especially configure it to compile the required
-PMDs). See the DPDK manual for further info. Then hit make install T=<your target>.
+PMDs). See the DPDK manual for further info. Then hit `make install T=<your target>`.
 
-Edit the Makefile and adapt RTE\_SDK to the path of the DPDK root directory and RTE\_TARGET to DPDK's platform target you have
+Edit the Makefile and adapt `RTE\_SDK` to the path of the DPDK root directory and `RTE\_TARGET` to DPDK's platform target you have
 compiled.
 
-Adapt run.sh to your needs, especially change the PCI addresses to your interfaces (see dpdk.org for the EAL environment syntax and 
+Adapt `run.sh` to your needs, especially change the PCI addresses to your interfaces (see dpdk.org for the EAL environment syntax and 
 the usage of dpdk-devbind.py Also change the EAL parameters to load the appropriate PMD for your NIC.
 
 Hit make.
@@ -22,7 +22,7 @@ Hit make.
 
 ### Configuration:
 
-Copy the file latgen-example.xml to latgen.xml. Edit latgen.xml and set your desired latency. 
+Copy the file `latgen-example.xml` to `latgen.xml`. Edit `latgen.xml` and set your desired latency. 
 
 As Sloth must preallocate the queue length, also adapt the qlen parameter. E.g. the "maxbw" method automatically 
 calculates the queue length required for a given maximum bandwidth. If the queue length is too small, packets
