@@ -33,7 +33,7 @@ interfaces are instead enumerated based on the MAC addresses stated in the confi
 
 ### Misc:
 
-Successfully tested in the following NICs:
+Successfully tested with the following NICs:
 
 - VirtIO
 - Intel 82599
